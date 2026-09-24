@@ -1,5 +1,4 @@
-const API_BASE = 'http://localhost:5000/api'
-
+const API_BASE = 'https://campus-fellowship-website.onrender.com/api'
 function getAuthHeaders() {
   const token = localStorage.getItem('ccf-admin-token')
   return token ? { Authorization: `Bearer ${token}` } : {}
